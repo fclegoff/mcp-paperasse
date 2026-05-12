@@ -1,0 +1,30 @@
+{
+  "name": "@fclegoff/mcp-notaire",
+  "version": "0.1.0",
+  "description": "MCP server \u2014 Notaire IA. Frais de notaire, plus-value immobili\u00e8re, droits de succession/donation, d\u00e9membrement, SCI.",
+  "type": "module",
+  "bin": {
+    "mcp-notaire": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "author": "Fran\u00e7ois-Charles Le Goff",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@fclegoff/mcp-cac",
+  "version": "0.1.0",
+  "description": "MCP server \u2014 Commissaire aux Comptes IA. Audit NEP 7 phases, validation comptes annuels, opinion motiv\u00e9e.",
+  "type": "module",
+  "bin": {
+    "mcp-cac": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "author": "Fran\u00e7ois-Charles Le Goff",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}
